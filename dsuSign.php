@@ -63,10 +63,10 @@ function sendStatus($text , $desp = '' , $key = '')
 }
 
 //签到代码
-$user = ''; //用户名
-$pwd = ''; //密码
-$baseUrl = ''; //论坛首页地址 结尾带上”/”
-$key = ''; // 方糖key
+$user = getenv('user'); //用户名
+$pwd = getenv('pwd'); //密码
+$baseUrl = getenv('baseUrl'); //论坛首页地址 结尾带上”/”
+$key = getenv('key'); // 方糖key
 
 //心情：开心，难过，郁闷，无聊，怒，擦汗，奋斗，慵懒，衰
 //{"kx","ng","ym","wl","nu","ch","fd","yl","shuai"};
